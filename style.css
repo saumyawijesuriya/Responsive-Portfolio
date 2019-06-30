@@ -129,6 +129,7 @@ background-color: #4aaaa5;
   margin: 4px 2px;
   width: 15%;
   cursor: pointer;
+  position: absolute;
 }
 .div1,
 .div2,
@@ -215,10 +216,39 @@ img {
     display: block;
     clear: both;
   }
+
+  @media screen and (max-width:980px){
+
+    .container{
+        width:80%;
+        height:100%;
+    }
+    #mainbox{
+        width:100%;
+        height:100%;
+        font-size: 15px;
+
+    }
+    #boxcontact{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    
+    #box3 {
+        width: 100%;
+        height: 650px;
+        padding-left: 40px;
+    }
+   
+
+
+  }
+
 @media screen and (max-width:768px) {
     header{
-        width:100%;
-        height:110px;
+        position: static;
     }
     h1{
         font-size: 20px
@@ -229,7 +259,7 @@ img {
         padding-left: 5%;
         padding-bottom: -10px;
         position: relative;
-        left:1%;
+        left:10%;
     }
     .rightheadings{
         padding: 5px;
@@ -241,32 +271,45 @@ img {
         height:100%;
     }
     #mainbox{
-        width:75%;
+        width:100%;
         height:100%;
+        font-size: 15px;
 
     }
-    .clearfix::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-    hr{
+    #boxcontact{
+        width: 75%;
+        height: 100%;
+    }
+    
+
+    
+    #box3 {
         width: 100%;
+        height: 650px;
+        padding-left: 40px;
+    }
+
+    
+    hr{
+        width: 90%;
     }
     #image{
-         width:45%;
-    }
-}               
-@media screen and (max-width:640px) {
-    header{
-        width:100%;
-        height: 150px;
-        position: static;
+    
+        height:200px;
+        width: 200px;
+        
+    }               
 
+}
+
+@media screen and (max-width:640px) {
+    header {
+        position: static;
     
     }
     #name{
         width:100%;
+        height: 50px;
         font-size: 15px;
     }
     .rightheadings{
@@ -274,33 +317,64 @@ img {
         width: 100%;
     }
     .container{
-        width:75%;
-        height:100%;
+        width:65%;
+        height:850px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
+    #image{
+        width:125px;
+        height: 250px;
+    }
+    
     #mainbox{
-        width:90%;
+        width:100%;
         height:100%;
         padding-left:25px;
         padding-right: 25px;
 
     }
-    hr{
+
+    #box3{
+        width: 295px;
+        height:1080px;
+        padding-left:40px;
+    }
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+    hr {
         width: 100%;
     }
     #image{
          width:85%;
     }
-}               
+               
 
 
+#boxcontact{
+        width: 400px;
+        height:750px;
+        padding-left:10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+}
 
-
-
-
+#submit{
+    width:75px;
+}
+}
 footer {
     margin-top: 20px;
     background-color: #666666;
     padding: 20px;
-    
     border-top: 5px solid #4aaaa5;
 }
